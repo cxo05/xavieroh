@@ -1,28 +1,21 @@
-import logo from "./logo.svg";
 import * as React from "react";
-import "./App.css";
+import "./output.css";
 import { Header } from "./Layouts/header.jsx";
 import { Footer } from "./Layouts/footer.jsx";
 import { Sidebar } from "./Layouts/sidebar";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="Sidebar-with-content">
-        <Sidebar />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h3>Welcome to React!</h3>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+    <div className="flex flex-col h-full">
+      <div className="px-4 mx-auto w-full max-w-6xl bg-white">
+        <Header />
+        <div>
+          <Sidebar />
+          <div style={{ float: "right", width: "calc(100% - 200px)" }}>
+            <Outlet />
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

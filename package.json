@@ -2,8 +2,14 @@
   "name": "app",
   "version": "0.0.47",
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.3",
+    "react-router-dom": "6",
+    "rehype-highlight": "^5.0.2",
+    "rehype-sort-tailwind-classes": "^1.0.1",
+    "remark-gfm": "^3.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {},
@@ -14,7 +20,11 @@
     ]
   },
   "devDependencies": {
-    "typescript": "latest",
-    "react-refresh": "0.10.0"
+    "@tailwindcss/typography": "^0.5.3",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "react-refresh": "^0.14.0",
+    "tailwindcss": "^3.1.6",
+    "typescript": "latest"
   }
 }
