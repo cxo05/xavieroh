@@ -1,19 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./Styles/style.css";
 import App from "./App";
 import Blog from "./Routes/blog";
 import Blogs from "./Routes/blogs";
 import About from "./Routes/about";
+import config from "./Files/config.json";
 
 let cache = {};
 
 const importAll = (r) => r.keys().forEach((key) => (cache[key] = r(key)));
 importAll(require.context("./files", true, /\.md$/));
 
+document.title = config.name;
+
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route exact path="/" element={<App />}>
         <Route index element={<Navigate to="/about" replace />} />
@@ -36,6 +39,6 @@ ReactDOM.render(
         })}
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );

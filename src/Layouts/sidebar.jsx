@@ -2,6 +2,8 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { MailIcon } from "@heroicons/react/outline";
 
+import config from "../Files/config.json";
+
 export class Sidebar extends React.Component {
   render() {
     return (
@@ -27,7 +29,7 @@ export class Sidebar extends React.Component {
         <ul className="pt-4 mt-4 space-y-2 border-t border-gray-200">
           <li>
             <a
-              href="https://github.com/"
+              href={config.github}
               className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 group"
               target="_blank"
               rel="noreferrer"
@@ -45,7 +47,7 @@ export class Sidebar extends React.Component {
           </li>
           <li>
             <a
-              href="mailto:"
+              href={"mailto:" + config.email}
               className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 group"
             >
               <MailIcon className="w-6 h-6"></MailIcon>

@@ -13,7 +13,7 @@ export class Blogs extends React.Component {
   render() {
     return (
       <main className="p-4 markdown-body">
-        <div>Blog Posts</div>
+        <h1>Blog Posts</h1>
         {this.state.samples.map((key) => {
           let path = key.slice(2, -3);
           return (
