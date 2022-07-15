@@ -1,9 +1,9 @@
 import * as React from "react";
-import "./output.css";
 import { Header } from "./Layouts/header.jsx";
 import { Footer } from "./Layouts/footer.jsx";
 import { Sidebar } from "./Layouts/sidebar";
 import { Outlet } from "react-router-dom";
+import "./output.css";
 
 function App() {
   return (
