@@ -1,11 +1,11 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { LocationMarkerIcon, MailIcon } from "@heroicons/react/outline";
+import { MailIcon } from "@heroicons/react/outline";
 
 export class Sidebar extends React.Component {
   render() {
     return (
-      <aside className="py-4 px-3" style={{ width: "200px", float: "left" }}>
+      <aside className="py-4 px-3 float-left" style={{ width: "200px" }}>
         <ul className="space-y-2">
           <li>
             <Link
@@ -27,17 +27,10 @@ export class Sidebar extends React.Component {
         <ul className="pt-4 mt-4 space-y-2 border-t border-gray-200">
           <li>
             <a
-              href="#"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100  group"
-            >
-              <LocationMarkerIcon className="w-6 h-6"></LocationMarkerIcon>
-              <span className="ml-4">Location</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
+              href="https://github.com/"
               className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 group"
+              target="_blank"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +45,7 @@ export class Sidebar extends React.Component {
           </li>
           <li>
             <a
-              href="#"
+              href="mailto:"
               className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 group"
             >
               <MailIcon className="w-6 h-6"></MailIcon>
