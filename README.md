@@ -12,32 +12,36 @@ curl https://bun.sh/install | bash
 
 ### Development
 
-Install dependencies
+1. Install dependencies
 
 ```sh
 bun install
 ```
 
-Run tailwindcss
+2. Run tailwindcss
 
 ```sh
 npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch
 ```
 
-Run the development server.
+3. Run the development server.
 
 ```sh
-npm start
+bun run start
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+4. Open http://localhost:3000 with your browser to see the result.
 
 ### Deployment
 
-Build the project
+1. Change `mode` to `production` in [webpack.config.js](webpack.config.js)
+2. Change config in [config.json](src/Files/config.json)
 
-```sh
-npm run build
-```
+3. Add markdown files in Files folder. (e.g. [test.md](src/Files/test.md))
+
+4. Build the project
+   ```sh
+   bun run build
+   ```
 
 Host public folder as a single page application

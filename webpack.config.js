@@ -90,7 +90,7 @@ module.exports = {
                 if (!lang || ['text', 'literal', 'nohighlight'].includes(lang)) {
                   return `<pre class="hljs">${code}</pre>`;
                 }
-                const html = highlight.highlight(lang, code).value;
+                const html = highlight.highlight(code, { language: lang, ignoreIllegals: true }).value;
                 return `<span class="hljs">${html}</span>`;
               },
             },
