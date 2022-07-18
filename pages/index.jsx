@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
-import "./Styles/style.css";
 import App from "./App";
 import Blog from "./Routes/blog";
 import Blogs from "./Routes/blogs";

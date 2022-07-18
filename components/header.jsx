@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import config from "../Files/config.json";
+import config from "../config.json";
 
 export class Header extends React.Component {
   render() {

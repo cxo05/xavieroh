@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { MailIcon } from "@heroicons/react/outline";
 
-import config from "../Files/config.json";
+import config from "../config.json";
 
 export class Sidebar extends React.Component {
   render() {
