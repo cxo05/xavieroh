@@ -11,7 +11,7 @@ export class Sidebar extends React.Component {
         <ul className="space-y-2">
           <li>
             <Link
-              to="/about"
+              href="/about"
               className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100"
             >
               <span className="ml-3">About</span>
@@ -19,7 +19,7 @@ export class Sidebar extends React.Component {
           </li>
           <li>
             <Link
-              to="/blog"
+              href="/posts"
               className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100"
             >
               <span className="ml-3">Blog</span>
