@@ -8,15 +8,18 @@ export default function Layout({ children }) {
       <Header />
       <div>
         <Sidebar />
-        <div
-          className="float-right"
-          style={{
-            width: "calc(100% - 200px)",
-            minHeight: "calc(100vh - 182px)",
-          }}
-        >
-          {children}
-        </div>
+        <style jsx>{`
+          .contentWidth {
+            width: 100%;
+            min-height: calc(100vh - 182px);
+          }
+          @media (min-width: 768px) {
+            .contentWidth {
+              width: calc(100% - 200px);
+            }
+          }
+        `}</style>
+        <div className="float-right contentWidth">{children}</div>
       </div>
       <Footer />
     </div>

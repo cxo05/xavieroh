@@ -10,6 +10,7 @@ function Post({ post }) {
         <title>
           {post.title} | {config.name}
         </title>
+        <meta property="og:description" content={post.excerpt} />
       </Head>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </main>
@@ -17,7 +18,13 @@ function Post({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, ["title", "date", "slug", "content"]);
+  const post = getPostBySlug(params.slug, [
+    "title",
+    "date",
+    "slug",
+    "content",
+    "excerpt",
+  ]);
   const content = await markdownToHtml(post.content);
   return {
     props: {

@@ -4,6 +4,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "autoprefixer": "^10.4.7",
+    "eslint-config-next": "^12.2.2",
     "gray-matter": "^4.0.3",
     "next": "^12.2.2",
     "react": "^17.0.2",
@@ -21,6 +22,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && bun run scripts/sitemap.js && next export",
     "start": "next start",
     "lint": "next lint"
   },

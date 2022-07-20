@@ -28,14 +28,16 @@ bun run dev
 
 ### Deployment
 
-1. Change `mode` to `production` in [webpack.config.js](webpack.config.js)
-2. Change config in [config.json](src/Files/config.json)
+1. Change config in [config.json](config.json)
 
-3. Add markdown files in `_posts` folder. (e.g. [a-demo-of-react-markdown.md](_posts/a-demo-of-react-markdown.md)
+2. Add markdown files in `_posts` folder. (e.g. [a-demo-of-react-markdown.md](_posts/a-demo-of-react-markdown.md))
 
-4. Build the project
+3. Export the project as a static site
    ```sh
-   bun run build
+   bun run export
    ```
-
-Host as a static site
+4. Test the static site
+   ```sh
+   cd out
+   live-server
+   ```
