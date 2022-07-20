@@ -1,6 +1,6 @@
 const fs = require("fs");
+const { getAllPosts } = require("../lib/api.jsx");
 const config = require("../config.json");
-const { getAllPosts } = require("../lib/api");
 
 const BASE_URL = config.baseURL;
 
@@ -33,3 +33,4 @@ const posts = getAllPosts(["slug"]);
 const sitemap = generateSiteMap(posts);
 
 fs.writeFileSync('public/sitemap.xml', sitemap);
+console.log("[*] Sitemap Generated");
