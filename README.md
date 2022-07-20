@@ -1,6 +1,6 @@
 # React Blog
 
-A blog made with react and tailwindcss, bootstrapped with bun.
+A blog made with Next.js with tailwindcss. Using bun instead of npm.
 
 ## Getting Started
 
@@ -18,30 +18,24 @@ curl https://bun.sh/install | bash
 bun install
 ```
 
-2. Run tailwindcss
+2. Run the development server.
 
 ```sh
-npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch
+bun run dev
 ```
 
-3. Run the development server.
-
-```sh
-bun run start
-```
-
-4. Open http://localhost:3000 with your browser to see the result.
+3. Open http://localhost:3000 with your browser to see the result.
 
 ### Deployment
 
 1. Change `mode` to `production` in [webpack.config.js](webpack.config.js)
 2. Change config in [config.json](src/Files/config.json)
 
-3. Add markdown files in Files folder. (e.g. [test.md](src/Files/test.md))
+3. Add markdown files in `_posts` folder. (e.g. [a-demo-of-react-markdown.md](_posts/a-demo-of-react-markdown.md)
 
 4. Build the project
    ```sh
    bun run build
    ```
 
-Host public folder as a single page application
+Host as a static site
