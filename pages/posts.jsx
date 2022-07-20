@@ -1,5 +1,8 @@
+import Head from "next/head";
 import Link from "next/link";
 import { getAllPosts } from "../lib/api";
+
+import config from "../config.json";
 
 function Posts({ posts }) {
   let date = new Intl.DateTimeFormat("en-SG", {
@@ -10,6 +13,9 @@ function Posts({ posts }) {
 
   return (
     <main className="p-4 markdown-body">
+      <Head>
+        <title>Posts | {config.name}</title>
+      </Head>
       <h1>Blog Posts</h1>
       {posts.map((post) => (
         <div key={post.slug} className="mb-4">

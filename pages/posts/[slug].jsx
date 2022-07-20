@@ -1,8 +1,16 @@
+import Head from "next/head";
 import { getAllPosts, getPostBySlug, markdownToHtml } from "../../lib/api";
+
+import config from "../../config.json";
 
 function Post({ post }) {
   return (
     <main className="p-4 markdown-body">
+      <Head>
+        <title>
+          {post.title} | {config.name}
+        </title>
+      </Head>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </main>
   );
