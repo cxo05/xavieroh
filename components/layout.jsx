@@ -15,7 +15,7 @@ export default function Layout({ children }) {
           }
           @media (min-width: 768px) {
             .contentWidth {
-              width: calc(100% - 200px);
+              width: calc(100% - 192px);
             }
           }
         `}</style>

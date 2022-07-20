@@ -5,7 +5,7 @@ import config from "../config.json";
 
 const Sidebar = () => {
   return (
-    <aside className="py-4 px-3 float-left" style={{ width: "200px" }}>
+    <aside className="py-4 px-3 float-left w-full sm:w-48">
       <ul className="space-y-2">
         <li>
           <Link href="/about">

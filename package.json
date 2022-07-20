@@ -22,7 +22,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && bun run scripts/sitemap.js && next export",
     "start": "next start",
     "lint": "next lint"
   },

@@ -1,6 +1,6 @@
-# React Blog
+# Personal Site
 
-A blog made with Next.js with tailwindcss. Using bun instead of npm.
+A site made with [Next.js](https://nextjs.org/) with [tailwindcss](https://tailwindcss.com/). Using bun instead of npm for package management.
 
 ## Getting Started
 
@@ -32,12 +32,7 @@ bun run dev
 
 2. Add markdown files in `_posts` folder. (e.g. [a-demo-of-react-markdown.md](_posts/a-demo-of-react-markdown.md))
 
-3. Export the project as a static site
+3. Build the project and host **or** deploy using https://vercel.com/
    ```sh
-   bun run export
-   ```
-4. Test the static site
-   ```sh
-   cd out
-   live-server
+   bun run build
    ```
