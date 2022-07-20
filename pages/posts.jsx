@@ -2,16 +2,23 @@ import Link from "next/link";
 import { getAllPosts } from "../lib/api";
 
 function Posts({ posts }) {
+  let date = new Intl.DateTimeFormat("en-SG", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(posts.date);
+
   return (
     <main className="p-4 markdown-body">
       <h1>Blog Posts</h1>
       {posts.map((post) => (
-        <div key={post.slug}>
-          <Link
-            href={`/posts/${encodeURIComponent(post.slug)}`}
-            className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100"
-          >
-            <a className="ml-3">{post.title}</a>
+        <div key={post.slug} className="mb-4">
+          <Link href={`/posts/${encodeURIComponent(post.slug)}`}>
+            <div className="p-4 bg-slate-100 hover:bg-gray-300 cursor-pointer rounded-lg">
+              <div className="font-semibold text-xl mb-4">{post.title}</div>
+              <div className="mb-4">{post.excerpt}</div>
+              <div>{date}</div>
+            </div>
           </Link>
         </div>
       ))}

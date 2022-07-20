@@ -3,24 +3,20 @@
   "version": "0.0.47",
   "dependencies": {
     "@heroicons/react": "^1.0.6",
-    "css-loader": "^6.7.1",
+    "autoprefixer": "^10.4.7",
     "gray-matter": "^4.0.3",
-    "highlight.js": "^11.6.0",
-    "html-loader": "^4.1.0",
     "next": "^12.2.2",
-    "postcss-loader": "^7.0.1",
-    "postcss-preset-env": "^7.7.2",
-    "raw-loader": "^4.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-markdown": "^8.0.3",
-    "react-router-dom": "6",
+    "rehype-autolink-headings": "^6.1.1",
     "rehype-highlight": "^5.0.2",
-    "rehype-sort-tailwind-classes": "^1.0.1",
+    "rehype-slug": "^5.0.1",
+    "rehype-stringify": "^9.0.3",
     "remark": "^14.0.2",
     "remark-gfm": "^3.0.1",
-    "style-loader": "^3.3.1",
-    "web-vitals": "^1.0.1"
+    "remark-rehype": "^10.1.0",
+    "remark-toc": "^8.0.1",
+    "tailwindcss": "^3.1.6"
   },
   "scripts": {
     "dev": "next dev",
@@ -29,29 +25,6 @@
     "lint": "next lint"
   },
   "devDependencies": {
-    "@babel/cli": "^7.18.6",
-    "@babel/core": "^7.18.6",
-    "@babel/plugin-transform-runtime": "^7.18.6",
-    "@babel/preset-env": "^7.18.6",
-    "@babel/preset-react": "^7.18.6",
-    "@babel/runtime": "^7.18.6",
-    "@tailwindcss/typography": "^0.5.3",
-    "autoprefixer": "^10.4.7",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.5",
-    "eslint": "^8.20.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-next": "12.2.2",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jest": "^26.6.0",
-    "markdown-loader": "^8.0.0",
-    "path": "^0.12.7",
-    "postcss": "^8.4.14",
-    "react-refresh": "^0.14.0",
-    "tailwindcss": "^3.1.6",
-    "typescript": "latest",
-    "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.9.3"
+    "eslint": "^8.20.0"
   }
 }

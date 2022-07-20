@@ -8,7 +8,13 @@ export default function Layout({ children }) {
       <Header />
       <div>
         <Sidebar />
-        <div style={{ float: "right", width: "calc(100% - 200px)" }}>
+        <div
+          className="float-right"
+          style={{
+            width: "calc(100% - 200px)",
+            minHeight: "calc(100vh - 182px)",
+          }}
+        >
           {children}
         </div>
       </div>

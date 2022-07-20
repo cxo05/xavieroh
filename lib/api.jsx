@@ -3,7 +3,12 @@ import { join } from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import remarkGfm from "remark-gfm";
-import remarkHtml from "remark-html";
+import rehypeHighlight from "rehype-highlight";
+import remarkRehype from "remark-rehype";
+import rehypeStringify from "rehype-stringify";
+import remarkToc from "remark-toc";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 const postsDirectory = join(process.cwd(), "_posts");
 
@@ -47,8 +52,13 @@ export function getAllPosts(fields) {
 
 export async function markdownToHtml(markdown) {
   const result = await remark()
+    .use(remarkToc)
     .use(remarkGfm)
-    .use(remarkHtml)
+    .use(remarkRehype)
+    .use(rehypeSlug)
+    .use(rehypeAutolinkHeadings)
+    .use(rehypeHighlight)
+    .use(rehypeStringify)
     .process(markdown);
   return result.toString();
 }
