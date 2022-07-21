@@ -6,7 +6,7 @@ date: "2020-03-16T05:35:07.322Z"
 
 # A demo of `react-markdown`
 
-![](/images/sky.jpeg)
+![](/images/sky.webp)
 
 ## Overview
 
