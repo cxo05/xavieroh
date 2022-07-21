@@ -12,7 +12,7 @@ function Posts({ posts }) {
   }).format(posts.date);
 
   return (
-    <main className="p-4 markdown-body">
+    <main className="p-4 markdown-body w-full">
       <Head>
         <title>Posts | {config.name}</title>
       </Head>
