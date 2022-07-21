@@ -19,7 +19,9 @@ export default function Layout({ children }) {
             }
           }
         `}</style>
-        <div className="float-right contentWidth">{children}</div>
+        <div className="flex justify-center float-right contentWidth">
+          {children}
+        </div>
       </div>
       <Footer />
     </div>

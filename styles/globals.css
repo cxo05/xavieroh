@@ -11,6 +11,25 @@ html,body {
   background-color: rgba(243, 244, 246);
 }
 
+* {
+  overflow: overlay;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;       
+  scrollbar-color: slategrey;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: slategrey;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
