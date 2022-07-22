@@ -7,7 +7,7 @@ export default function Index({ content }) {
   return (
     <main className="p-4 markdown-body w-full">
       <Head>
-        <title>About | {config.name}</title>
+        <title>{config.name}</title>
       </Head>
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </main>

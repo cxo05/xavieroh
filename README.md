@@ -1,6 +1,6 @@
 # Personal Site
 
-A site made with [Next.js](https://nextjs.org/) with [tailwindcss](https://tailwindcss.com/). Using bun instead of npm for package management.
+A site made with [Next.js](https://nextjs.org/) with [tailwindcss](https://tailwindcss.com/). Using [bun](https://bun.sh/) instead of npm for package management.
 
 ## Getting Started
 
