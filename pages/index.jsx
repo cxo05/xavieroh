@@ -8,6 +8,7 @@ export default function Index({ content }) {
     <main className="p-4 markdown-body w-full">
       <Head>
         <title>{config.name}</title>
+        <meta name="description" content="Personal site of Xavier Oh" />
       </Head>
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </main>

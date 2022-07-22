@@ -10,7 +10,7 @@ function Post({ post }) {
         <title>
           {post.title} | {config.name}
         </title>
-        <meta property="og:description" content={post.excerpt} />
+        <meta name="description" content={post.excerpt} />
       </Head>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </main>
