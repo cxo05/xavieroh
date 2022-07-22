@@ -6,6 +6,10 @@ export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
+        <meta
+          name="google-site-verification"
+          content="eJf5FzckPc2LLtQqBW_GQrAhwAU9PK2A5ifjQAcIr7g"
+        />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
