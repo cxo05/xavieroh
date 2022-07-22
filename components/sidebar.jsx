@@ -8,9 +8,9 @@ const Sidebar = () => {
     <aside className="py-4 px-3 float-left w-full sm:w-48">
       <ul className="space-y-2">
         <li>
-          <Link href="/about">
+          <Link href="/">
             <a className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
-              About
+              Home
             </a>
           </Link>
         </li>

@@ -5,7 +5,7 @@ import config from "../../config.json";
 
 function Post({ post }) {
   return (
-    <main className="p-4 markdown-body">
+    <main className="p-4 markdown-body w-full">
       <Head>
         <title>
           {post.title} | {config.name}

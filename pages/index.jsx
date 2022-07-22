@@ -1,3 +1,59 @@
-export default function Index() {
-  return <div>Default Page</div>;
+import Head from "next/head";
+
+import config from "../config.json";
+import { markdownToHtml } from "../lib/api";
+
+export default function Index({ content }) {
+  return (
+    <main className="p-4 markdown-body w-full">
+      <Head>
+        <title>About | {config.name}</title>
+      </Head>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
+    </main>
+  );
+}
+
+export async function getStaticProps() {
+  let aboutMarkdown = `
+  # Welcome
+
+  This is a site I made following the [next.js](https://nextjs.org/) documentation which is one of the best out there. 
+
+  ## About Me
+
+  Currently a computer science student at National University of Singapore. 
+  
+  I am interested in Web Development and occasionally participate in CTF competitions.
+
+  Web Frameworks I'm comfortable in:
+  - Frontend
+    - Angular
+    - Next.js / Reactjs (Which is what this site is running on)
+  - Backend
+    - node.js / Express
+    - Go
+  - Database
+    - SQL (MySQL / PostgreSQL)
+  - Others
+    - Docker
+    - AWS
+
+  Programming Languages:
+  - Typescript / Javascript
+  - Golang
+  - Python
+  - Java
+  - C++
+  
+  Some projects I worked on
+   - Stochastic simulation of binary collisions of monoatomic gas molecules. [Link](https://github.com/cxo05/Collision-Sim)
+   - Telegram Bot for clocking in and out of an area. [Link](https://github.com/cxo05/BIBO_Bot)
+  `;
+  const content = await markdownToHtml(aboutMarkdown);
+  return {
+    props: {
+      content: content,
+    },
+  };
 }
