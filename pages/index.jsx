@@ -5,12 +5,15 @@ import { markdownToHtml } from "../lib/api";
 
 export default function Index({ content }) {
   return (
-    <main className="p-4 markdown-body w-full">
+    <main className="p-4 w-full">
       <Head>
         <title>{config.name}</title>
         <meta name="description" content="Personal site of Xavier Oh" />
       </Head>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+      <div
+        className="markdown-body"
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
     </main>
   );
 }

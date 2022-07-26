@@ -5,14 +5,17 @@ import config from "../../config.json";
 
 function Post({ post }) {
   return (
-    <main className="p-4 markdown-body w-full">
+    <main className="p-4 w-full">
       <Head>
         <title>
           {post.title} | {config.name}
         </title>
         <meta name="description" content={post.excerpt} />
       </Head>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <div
+        className="markdown-body"
+        dangerouslySetInnerHTML={{ __html: post.content }}
+      />
     </main>
   );
 }
