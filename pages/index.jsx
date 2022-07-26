@@ -19,11 +19,11 @@ export async function getStaticProps() {
   let aboutMarkdown = `
   # Welcome
 
-  This is a site I made following the [next.js](https://nextjs.org/) documentation which is one of the best out there. 
+  This is a site I made following the [next.js](https://nextjs.org/) documentation.
 
   ## About Me
 
-  Currently a computer science student at National University of Singapore. 
+  Currently a computer science student at the National University of Singapore. 
   
   I am interested in Web Development and occasionally participate in CTF competitions.
 
