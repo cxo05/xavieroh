@@ -10,17 +10,21 @@ date: "2022-07-28"
 
 ## Site essentials
 
-### Page title
+### Page head
 
-In general each page should have their own title that describes it well.
+Each page should have a `<title>` and `<meta name="description">` tag.
 
 ```html
 <head>
-  <title>Site Title</title>
+  <title>Welcome - My Site</title>
+  <meta name="description" content="Insert description here" />
 </head>
 ```
 
-For more information visit https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title#page_titles_and_seo
+For more information:
+
+- [Page Title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title#page_titles_and_seo)
+- [Meta Description](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#active_learning_the_descriptions_use_in_search_engines)
 
 ### Robots.txt
 
@@ -60,6 +64,4 @@ Improve the SEO score by following the best practices under the SEO section.
 
 ## Google Search Console
 
-1. Login to the [Google search console](https://search.google.com/search-console/about).
-2. Register website as your own
-3. Add sitemap
+Login to [Google search console](https://search.google.com/search-console/about).

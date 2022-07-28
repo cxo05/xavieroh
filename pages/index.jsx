@@ -10,7 +10,7 @@ export default function Index({ content }) {
         <title>{config.full_name}</title>
         <meta
           name="description"
-          content="Personal site of Xavier Oh Zhi Sheng"
+          content="A computer science student at the National University of Singapore. I am interested in Web Development and occasionally participate in CTF competitions."
         />
       </Head>
       <div
