@@ -10,25 +10,18 @@ function generateSiteMap(posts) {
        <loc>${BASE_URL}</loc>
      </url>
      <url>
-       <loc>${BASE_URL}/about</loc>
-     </url>
-     <url>
        <loc>${BASE_URL}/posts</loc>
      </url>
      ${posts
-      .map((post) => {
-        return `
-       <url>
-           <loc>${`${BASE_URL}/posts/${post.slug}`}</loc>
-       </url>
-     `;
-      })
-      .join("")}
+       .map((post) => {
+         return `<url><loc>${`${BASE_URL}/posts/${post.slug}`}</loc></url>`;
+       })
+       .join("")}
    </urlset>
  `;
 }
 
-function SiteMap() { }
+function SiteMap() {}
 
 export async function getServerSideProps({ res }) {
   const posts = getAllPosts(["slug"]);

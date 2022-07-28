@@ -8,7 +8,7 @@ function Post({ post }) {
     <main className="p-4 w-full">
       <Head>
         <title>
-          {post.title} | {config.name}
+          {post.title} | {config.full_name}
         </title>
         <meta name="description" content={post.excerpt} />
       </Head>

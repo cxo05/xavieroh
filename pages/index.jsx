@@ -7,8 +7,11 @@ export default function Index({ content }) {
   return (
     <main className="p-4 w-full">
       <Head>
-        <title>{config.name}</title>
-        <meta name="description" content="Personal site of Xavier Oh" />
+        <title>{config.full_name}</title>
+        <meta
+          name="description"
+          content="Personal site of Xavier Oh Zhi Sheng"
+        />
       </Head>
       <div
         className="markdown-body"

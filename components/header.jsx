@@ -4,7 +4,7 @@ import { MailIcon } from "@heroicons/react/outline";
 const Header = () => {
   return (
     <div className="h-16 flex items-center justify-between border-b-2 mb-4 sm:h-24">
-      <p className="px-3 text-3xl font-semibold">{config.name}</p>
+      <p className="px-3 text-3xl font-semibold">{config.display_name}</p>
       <div className="flex gap-4">
         <a
           href={config.github}

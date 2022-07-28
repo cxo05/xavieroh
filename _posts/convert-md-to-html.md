@@ -1,7 +1,7 @@
 ---
 title: "Test post for markdown to html"
 excerpt: "Testing all the remark plugins to generate html from a markdown file"
-date: "2020-03-16T05:35:07.322Z"
+date: "2022-07-20"
 ---
 
 # Converting markdown to html using `remark`
