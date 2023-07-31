@@ -1,14 +1,15 @@
-import Header from "./header";
-import Footer from "./footer";
-import Sidebar from "./sidebar";
+import Header from "./header"
+import Footer from "./footer"
+import Sidebar from "./sidebar"
+import { ReactNode } from "react"
 
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="flex flex-col min-h-full px-4 mx-auto w-full max-w-6xl bg-white">
       <Header />
       <div>
         <Sidebar />
-        <style jsx>{`
+        <style>{`
           .contentWidth {
             width: 100%;
             min-height: calc(100vh - 182px);
@@ -23,5 +24,5 @@ export default function Layout({ children }) {
       </div>
       <Footer />
     </div>
-  );
+  )
 }

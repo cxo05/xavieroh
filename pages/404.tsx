@@ -4,5 +4,5 @@ export default function Custom404() {
       <span className="text-4xl">404</span>
       <span>Page Not Found</span>
     </div>
-  );
+  )
 }

@@ -25,17 +25,17 @@ date: "2022-07-20"
 ### Javascript
 
 ```js
-import React from "react";
-import ReactDOM from "react-dom";
-import ReactMarkdown from "react-markdown";
-import rehypeHighlight from "rehype-highlight";
+import React from "react"
+import ReactDOM from "react-dom"
+import ReactMarkdown from "react-markdown"
+import rehypeHighlight from "rehype-highlight"
 
 ReactDOM.render(
   <ReactMarkdown rehypePlugins={[rehypeHighlight]}>
     {"# Your markdown here"}
   </ReactMarkdown>,
-  document.querySelector("#content")
-);
+  document.querySelector("#content"),
+)
 ```
 
 ### Python

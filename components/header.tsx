@@ -1,7 +1,7 @@
-import config from "../config.json";
-import { MailIcon } from "@heroicons/react/outline";
+import config from "../config.json"
+import { MailIcon } from "@heroicons/react/outline"
 
-const Header = () => {
+export default function Header() {
   return (
     <div className="h-16 flex items-center justify-between border-b-2 mb-4 sm:h-24">
       <p className="px-3 text-3xl font-semibold">{config.display_name}</p>
@@ -31,7 +31,5 @@ const Header = () => {
         </a>
       </div>
     </div>
-  );
-};
-
-export default Header;
+  )
+}
