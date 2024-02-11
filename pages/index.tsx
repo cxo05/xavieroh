@@ -11,7 +11,7 @@ export default function Index({ content }: { content: string }) {
         <title>{config.full_name}</title>
         <meta
           name="description"
-          content="A computer science student at the National University of Singapore. I am interested in Web Development and occasionally participate in CTF competitions."
+          content="Computer science student at the National University of Singapore."
         />
       </Head>
       <div
