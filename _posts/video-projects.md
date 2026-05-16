@@ -1,12 +1,12 @@
 ---
-title: "My video editing and camera work history"
-excerpt: "I used to do a few video editing and camera work back in high school so I'm using this post to document some of the work I did."
-date: "2024-01-28"
+title: "My filming and video editing history"
+excerpt: "I do some filming and video editing so I'm using this to document some of the work I have done."
+date: "2026-5-11"
 ---
 
-# My video production history (WIP)
+# My video production history
 
-I used to do a few video editing and filming back in high school so I'm using this to document some of the work I have done.
+I do some filming and video editing so I'm using this to document some of the work I have done.
 
 ## 2016
 
@@ -26,4 +26,8 @@ Class of 2019, 607 Graduation Video
 
 ## 2022
 
-used - Short film for GEC1017 - [Youtube](https://www.youtube.com/watch?v=BGh6Bg9dtG4)
+used - Short film for GEC1017 (Film Art) - [Youtube](https://www.youtube.com/watch?v=BGh6Bg9dtG4)
+
+## 2026
+
+The Coroner's Report - Short film for GEC1041 (Crime Fiction and Film across Space & Time) - [Google Drive](https://drive.google.com/file/d/18xmCxCPtfhjuo5Pp6C3h9rOesVHwFhkn/view?usp=sharing)
