@@ -1,8 +1,12 @@
 ---
 title: "The Memory Police - My Musings"
 excerpt: "Writing down some thoughts about the book."
-date: "2026-11-05"
+date: "2026-05-11"
 ---
+
+# The Memory Police - My Musings
+
+_2026-05-11_
 
 I guess the book succeeded in compelling me to write down my thoughts lest I forget. A nice book that puts forth some ideas as to what truely comprises or makes a person, is it one's voice, through spoken words or just letters scribbled down in a corner of sheet, either with deep thoughts or nothing at all. I assure you readers that these words you see here are just shallow musings of a bored person. 
 

@@ -1,7 +1,7 @@
 ---
 title: "My filming and video editing history"
 excerpt: "I do some filming and video editing so I'm using this to document some of the work I have done."
-date: "2026-5-11"
+date: "2026-05-11"
 ---
 
 # My video production history

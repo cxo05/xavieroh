@@ -1,5 +1,7 @@
 import Head from "next/head"
-import { Post, getAllPosts, getPostBySlug, markdownToHtml } from "../../lib/api"
+import type { Post } from "../../lib/api"
+
+import { getAllPosts, getPostBySlug, markdownToHtml } from "../../lib/api"
 
 import config from "../../config.json"
 import { GetStaticProps } from "next"

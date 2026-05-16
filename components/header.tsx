@@ -1,10 +1,11 @@
+import Link from "next/link"
 import config from "../config.json"
-import { MailIcon } from "@heroicons/react/outline"
+import { EnvelopeIcon } from "@heroicons/react/24/outline"
 
 export default function Header() {
   return (
-    <div className="h-16 flex items-center justify-between border-b-2 mb-4 sm:h-24">
-      <p className="px-3 text-3xl font-semibold">{config.display_name}</p>
+    <div className="h-16 flex items-center justify-between mb-4 px-4 sm:h-24 bg-slate-200">
+      <Link href="/" className="px-3 text-3xl font-semibold">{config.display_name}</Link>
       <div className="flex gap-4">
         <a
           href={config.github}
@@ -26,7 +27,7 @@ export default function Header() {
           href={"mailto:" + config.email}
           className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 group"
         >
-          <MailIcon className="w-8 h-8"></MailIcon>
+          <EnvelopeIcon className="w-8 h-8"></EnvelopeIcon>
           <span className="ml-3 hidden sm:block">Email</span>
         </a>
       </div>

@@ -2,17 +2,11 @@
 
 A site made with [Next.js](https://nextjs.org/) with [tailwindcss](https://tailwindcss.com/).
 
-Using [bun](https://bun.sh/) instead of npm for package management.
-
-Replace bun with npm when on windows.
+Using [bun](https://bun.sh/) instead of npm for package management and as a runtime.
 
 ## Getting Started
 
-### Install Bun
-
-```sh
-curl https://bun.sh/install | bash
-```
+[Install Bun](https://bun.com/docs/installation)
 
 ### Development
 

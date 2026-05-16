@@ -5,9 +5,9 @@ import { ReactNode } from "react"
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex flex-col min-h-full px-4 mx-auto w-full max-w-6xl bg-white">
+    <div className="flex flex-col min-h-full mx-auto w-full max-w-4xl bg-white">
       <Header />
-      <div>
+      <div className="px-4">
         <Sidebar />
         <style>{`
           .contentWidth {
@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             }
           }
         `}</style>
-        <div className="flex justify-center contentWidth">{children}</div>
+        <div className="flex justify-center">{children}</div>
       </div>
       <Footer />
     </div>
